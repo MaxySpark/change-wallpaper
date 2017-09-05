@@ -9,7 +9,7 @@ const argv = require('yargs').option({
         // demand : true,
         alias:['i'],
         description: "Set Change Interval",
-        type: 'number'
+        type: 'string'
     }
 }).help('help').alias('help','h').argv;
 
@@ -18,11 +18,10 @@ let images = [];
 let time = 1 * 60000;
 
 if(argv.i) {
-    time = argv.i;
+    time = parseFloat(argv.i) * 60000;
 }
 
 let cdr = process.cwd();
-// fs.readdir('./images/',function(err, files){
 fs.readdir(cdr,function(err, files){
     if (err) {
         return console.error(err);
@@ -39,7 +38,6 @@ fs.readdir(cdr,function(err, files){
             console.log(images.length);
             console.log(images[i]);
             console.log(i);
-            // wallpaper.set(path.join(__dirname,'images',images[i])).then(() => {
 
             wallpaper.set(path.join(cdr,images[i])).then(() => {
                 console.log("Set");
