@@ -1,5 +1,5 @@
 {
-  "name": "change-wallpaper",
+  "name": "swall",
   "version": "0.0.1",
   "description": "Change Wallpaper",
   "main": "app.js",
@@ -21,7 +21,10 @@
   },
   "homepage": "https://github.com/MaxySpark/change-wallpaper#readme",
   "dependencies": {
-    "shelljs": "^0.7.8",
-    "wallpaper": "^2.5.0"
+    "wallpaper": "^2.5.0",
+    "yargs": "^8.0.2"
+  },
+  "bin": {
+    "swall": "./app.js"
   }
 }
