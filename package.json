@@ -1,0 +1,27 @@
+{
+  "name": "change-wallpaper",
+  "version": "0.0.1",
+  "description": "Change Wallpaper",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MaxySpark/change-wallpaper.git"
+  },
+  "keywords": [
+    "wallpaper",
+    "nodejs"
+  ],
+  "author": "MaxySpark <hello@maxyspark.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/MaxySpark/change-wallpaper/issues"
+  },
+  "homepage": "https://github.com/MaxySpark/change-wallpaper#readme",
+  "dependencies": {
+    "shelljs": "^0.7.8",
+    "wallpaper": "^2.5.0"
+  }
+}
