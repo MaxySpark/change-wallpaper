@@ -1,4 +1,4 @@
-# sowall (Set Wallpaper - Folder)
+# swall (Set Wallpaper - Folder)
 A Utility To Set Wallpaper :wink:
 (Just For Fun)
 
